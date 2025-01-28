@@ -19,12 +19,21 @@
           colors: {
             clifford: '#da373d',
             'justice-primary': '#B68C5A',
+            'dark': '#414040',
+            'dark-3': '#707070',
             'test2': 'rgba(17, 17, 17, 0)',
             'test3': 'rgb(17, 17, 17)',
           },
           fontFamily: {
             'poppins': ['Poppins', 'serif'],
             'bd': ['EB Garamond', 'serif'],
+          },
+          fontSize: {
+            '40': ['2.5rem', {
+              lineHeight: '3.25rem',
+              fontWeight: '700',
+            }],
+
           }
         }
       }
@@ -130,7 +139,8 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="px-7 py-[18px] bg-justice-primary text-white text-lg font-semibold rounded-lg">Free Consultation</a>
+        <a class="px-7 py-[18px] bg-justice-primary text-white text-lg font-semibold rounded-lg hover:bg-opacity-70">Free
+          Consultation</a>
       </div>
     </div>
   </header>
@@ -138,19 +148,40 @@
   <main class="max-w-7xl mx-auto px-5">
     <!-- Hero Section -->
     <section>
-      <div class="hero min-h-screen rounded-lg" style="background-image: url(./images/banner.png);">
+      <div class="hero min-h-[580px] rounded-lg overflow-hidden" style="background-image: url(./images/banner.png);">
         <div class="hero-overlay bg-gradient-to-t from-test3 to-test2"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-[695px]">
-            <h1 class="font-bd mb-5 text-7xl font-bold">We Provide Effective Legal Solutions</h1>
-            <p class="mb-5">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            <h1 class="font-bd mb-6 text-7xl font-bold">We Provide Effective Legal Solutions</h1>
+            <p class="mb-8">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <form role="search" method="post" action="">
+              <div class="flex gap-x-6">
+                <input class="grow px-7 py-[18px] rounded-lg focus:outline-none placeholder:text-[#A0A0A0] text-black"
+                  type="search" placeholder="Search your services">
+                <button type="submit" name="search"
+                  class="px-10 py-[17px] bg-justice-primary text-white text-[20px] font-semibold rounded-lg hover:bg-opacity-70">Search</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!--The Legal Practice Area -->
+    <section class="py-28">
+      <div class="max-w-[714px] mx-auto text-center">
+        <h2 class="text-dark font-bd text-40 mb-6">The Legal Practice Area</h2>
+        <p class="text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      </div>
+      <div>
+        
+      </div>
+    </section>
+
+
   </main>
 
 </body>
